@@ -1,3 +1,59 @@
+@@font-face {
+  font-family: Marvel;
+  src: url(./Marvel-Regular.ttf));
+}
+
 html{
-  background-color: lavender;
+  background-color: #f0131e;
+}
+
+/* flexbox to contain hero img links */
+div.container{
+  margin-left: auto;
+  margin-right: 300px;
+  background-color: black;
+  width: 99.5%;
+  height: 400px;
+  display: inline-flex;
+  border: 2px solid black;
+  color: white;
+  justify-content: flex-start;
+
+}
+#characterList{
+  font-family: Marvel;
+  text-transform: uppercase;
+  font-size: 3em;
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+input[type=text] {
+  width: 100px;
+  transition: width 0.4s ease-in-out;
+
+}
+
+/* When the input field gets focus, change its width to 60% */
+input[type=text]:focus {
+  width: 60%;
+}
+
+.topNav a.home{
+  font-family: Marvel-Regular;
+  text-transform: uppercase;
+  font-size: 3em;
+  padding-right: 25px;
+  padding-left: 25px;
+  color: white;
+}
+hr{
+  height: 3px;
+  background: white;
+  border: none;
 }
