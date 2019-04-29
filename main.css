@@ -14,10 +14,12 @@ div.container{
   background-color: black;
   width: 99.5%;
   height: 400px;
-  display: inline-flex;
-  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-self: flex-start;
   color: white;
-  justify-content: flex-start;
+  justify-content:space-between;
 
 }
 #characterList{
@@ -27,7 +29,12 @@ div.container{
   text-decoration: underline;
 }
 
-
+.boxes{
+  background-color: white;
+  width: 50px;
+  height: 100px;
+  border: 1px solid #000;
+}
 
 
 
