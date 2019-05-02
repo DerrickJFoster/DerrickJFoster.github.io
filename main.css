@@ -12,6 +12,9 @@ html{
 h1{
   font-family: Marvel;
 }
+h6{
+  color: black;
+}
                               /* CHARACTER LIST */
 /* Character list header */
 h2 {
