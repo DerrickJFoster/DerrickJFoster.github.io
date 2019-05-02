@@ -30,7 +30,7 @@ const $container = $('#container')
 const makeBoxes = (character) =>{
     console.log(character);
    $('<div>').addClass('boxes').html(`
-   <img src="${character.thumbnail.path}/portrait_medium.${character.thumbnail.extension}" alt="">
+   <img id='characterPic' src="${character.thumbnail.path}/portrait_medium.${character.thumbnail.extension}" alt="">
    <div class='name'>${character.name}</div>
    `).appendTo('div.container')
 }

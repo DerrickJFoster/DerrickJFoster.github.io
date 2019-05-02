@@ -51,12 +51,12 @@ div.container{
   background-color: #312f2d;
 }
 
-img{
+#characterPic{
   /* border-radius: 10px 10px 0px 0px; */
   border-radius: 10px 10px 10px 10px;
   box-shadow: 0 8px 6px -6px #312f2d;
 }
-img:hover{
+#characterPic:hover{
   border-radius: 10px 10px 0px 0px;
 }
 .name{
