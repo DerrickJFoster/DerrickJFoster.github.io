@@ -45,19 +45,33 @@ div.container{
   border-radius: 10px;
   margin: 5px;
   /* box-shadow: 0 8px 6px -6px #312f2d; */
+  color: transparent;
+  display: block;
+  overflow: auto;
 }
 .boxes:hover{
+  width: 300px;
   transform: scale(1.4);
-  background-color: #312f2d;
+  background: url(./Images/stars.png);
 }
-
+.boxes:hover .info{
+  color: white;
+  text-align: justify;
+}
+.info{
+  margin-right: 3px;
+  margin-left: 3px;
+}
 #characterPic{
   /* border-radius: 10px 10px 0px 0px; */
+  float: left;
   border-radius: 10px 10px 10px 10px;
   box-shadow: 0 8px 6px -6px #312f2d;
 }
 #characterPic:hover{
   border-radius: 10px 10px 0px 0px;
+  border-radius: 10px 10px 10px 10px;
+  margin-right: 5px;
 }
 .name{
   color: white;
