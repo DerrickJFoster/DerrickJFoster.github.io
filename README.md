@@ -8,6 +8,6 @@ I used Ajax to retrieve information from the Marvel API. I created boxes for eac
 
 My approach was to create a "character card" type page where you can get info on a character easily and accessibly. The demographic would be targeting people who don't have much knowledge on Marvel characters.
 
-My current problems are trying to populate the cards with character information and getting the search bar to function.
+My current problems are that the character cards on the right side overlow the page, I cannot get film titles to show up so i chose to do "how many films they've appeared in" and getting the search bar to function.
 
 <a href="https://derrickjfoster.github.io/">Info-Hero Home Page</a>

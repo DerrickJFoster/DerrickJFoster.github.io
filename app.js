@@ -28,15 +28,21 @@ const getInfo = () =>{
 const $container = $('#container')
 
 const makeBoxes = (character) =>{
-    // console.log(apiURL);
+    console.log(character.series);
    $('<div>').addClass('boxes').html(`
    <img id='characterPic' src="${character.thumbnail.path}/portrait_medium.${character.thumbnail.extension}" alt="">
+
    <h4 class='name'>${character.name}</h4>
-   <p class='info'> BIO: <br> ${character.description}<br> FILMS:<br>${character.series}</p>
+
+   <p class='info'>
+   BIO:<br>${character.description}
+   <br>
+   Times appeared in Film: ${character.series.available}
+   </p>
 
    `).appendTo('div.container')
 }
-
+// FILMS:<br>${character.series[0].name}
 
 
 

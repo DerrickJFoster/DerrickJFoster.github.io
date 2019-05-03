@@ -50,16 +50,18 @@ div.container{
   overflow: auto;
 }
 .boxes:hover{
-  width: 300px;
+  width: 310px;
   transform: scale(1.4);
   background: url(./Images/stars.png);
+  scroll-behavior: auto;
+  position:static;
 }
 .boxes:hover .info{
   color: white;
   text-align: justify;
 }
 .info{
-  margin-right: 3px;
+  margin-right: 10px;
   margin-left: 3px;
 }
 #characterPic{
@@ -67,11 +69,11 @@ div.container{
   float: left;
   border-radius: 10px 10px 10px 10px;
   box-shadow: 0 8px 6px -6px #312f2d;
+  margin-right: 5px;
 }
 #characterPic:hover{
   border-radius: 10px 10px 0px 0px;
   border-radius: 10px 10px 10px 10px;
-  margin-right: 5px;
 }
 .name{
   color: white;
