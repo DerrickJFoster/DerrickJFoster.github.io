@@ -1,5 +1,4 @@
 console.log($);
-
 const baseURL = `https://gateway.marvel.com:443/v1/public/characters?`
 let ts = `ts=1`
 const publicKey = `apikey=b838fe84e1736b52702b1c6cc30a90ed`;
@@ -11,7 +10,7 @@ let queryType = `limit=100`
 const apiURL = baseURL + ts + '&' + publicKey+ '&' + queryType + '&' + hash
 
 //hash must = md5 of ts= + private + public
-
+console.log(apiURL);
 
 const getInfo = () =>{
   $.ajax({
