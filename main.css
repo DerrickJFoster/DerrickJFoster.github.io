@@ -11,14 +11,16 @@ html{
   background-color: #f0131e;
   background-image: linear-gradient(to bottom, red , yellow);
 }
-
+body{
+  cursor: url('./Images/prism.png'),auto;
+}
 h1{
   font-family: Marvel;
 }
 
                               /* CHARACTER LIST */
 /* Character list header */
-h2 {
+h2, hr {
   text-align: center;
   color: white;
   text-shadow: 2px 2px 10px grey;
@@ -67,7 +69,7 @@ div.container{
 }
 .info{
   margin-right: 10px;
-  margin-left: 3px; 
+  margin-left: 3px;
 }
 #characterPic{
   /* border-radius: 10px 10px 0px 0px; */
