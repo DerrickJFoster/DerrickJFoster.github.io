@@ -1,8 +1,11 @@
-@@font-face {
+@font-face {
   font-family: Marvel;
   src: url(./Marvel-Regular.ttf));
 }
-
+@viewport{
+  width: device-width;
+  zoom: 1.0;
+}
 html{
   background-color: #f0131e;
   background-image: linear-gradient(to bottom, red , yellow);
