@@ -12,7 +12,7 @@ html{
   background-image: linear-gradient(to bottom, red , yellow); */
 
 }
-#bg {
+/* #bg {
   position: fixed;
   top: -50%;
   left: -50%;
@@ -28,7 +28,7 @@ html{
   margin: auto;
   min-width: 50%;
   min-height: 50%;
-}
+} */
 body{
   cursor: url('./Images/prism.png'),auto;
   background:   url('./Images/plain-color-red-wallpaper-2.jpg') center;
@@ -46,7 +46,9 @@ h1 {
   text-transform: uppercase;
   font-size: 10em;
   margin-top: 0;
-  margin-bottom:0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
   opacity: .95;
 }
 
