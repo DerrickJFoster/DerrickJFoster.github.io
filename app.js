@@ -18,7 +18,7 @@ const getInfo = () =>{
     url: apiURL
   }).then((data) =>{
       for (var i = 0; i < 100; i++) {
-        console.log(data.data.results[i].name);
+        // console.log(data.data.results[i].name);
         makeBoxes(data.data.results[i])
   }
 })
@@ -28,7 +28,7 @@ const getInfo = () =>{
 const $container = $('#container')
 
 const makeBoxes = (character) =>{
-    console.log(character.series);
+    // console.log(character.series);
    $('<div>').addClass('boxes').html(`
    <img id='characterPic' src="${character.thumbnail.path}/portrait_medium.${character.thumbnail.extension}" alt="">
 

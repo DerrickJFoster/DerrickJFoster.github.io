@@ -8,11 +8,30 @@
 }
 
 html{
-  background-color: #f0131e;
-  background-image: linear-gradient(to bottom, red , yellow);
+  /* background-color: #f0131e;
+  background-image: linear-gradient(to bottom, red , yellow); */
+
+}
+#bg {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+}
+#bg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
 }
 body{
   cursor: url('./Images/prism.png'),auto;
+  background:   url('./Images/plain-color-red-wallpaper-2.jpg') center;
 }
 h1{
   font-family: Marvel;
@@ -57,11 +76,13 @@ div.container{
   scroll-behavior: none;
 }
 .boxes:hover{
-  width: 310px;
-  transform: scale(1.4);
+  min-width: 50vh;
+  min-height: 25vh;
+  transform: scale(1);
   background: url(./Images/stars.png);
   scroll-behavior: auto;
   position:static;
+  box-shadow: 0 20px 15px -11px #312f2d;
 }
 .boxes:hover .info{
   color: white;
@@ -142,7 +163,4 @@ input[type=text]:focus {
   color: rgba(0,0,0,.7);
   text-shadow: 0 1px rgba(255, 255, 255, 0.1);
   text-align: center;
-}
-@media only screen and (min-width: 768px){
-
 }
