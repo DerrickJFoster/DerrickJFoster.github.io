@@ -141,7 +141,7 @@ opacity: .8;
 }
 .topNav:hover{
   opacity: 1;
-  transform: scale(1.02);
+  transform: scale(1.01);
   box-shadow: 0 8px 6px -6px #312f2d;
 
 }
