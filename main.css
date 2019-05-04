@@ -1,6 +1,6 @@
 @font-face {
   font-family: Marvel;
-  src: url(./Marvel-Regular.ttf));
+  src: url('Marvel-Regular.ttf');
 }
 @viewport{
   width: device-width;
@@ -33,13 +33,12 @@ body{
   cursor: url('./Images/prism.png'),auto;
   background:   url('./Images/plain-color-red-wallpaper-2.jpg') center;
 }
-h1{
-  font-family: 'Marvel', fallback, Arial;
-}
+
 
                               /* CHARACTER LIST */
 /* Character list header */
-h1, hr {
+h1 {
+  font-family: Marvel-regular, fallback, Arial;
   text-align: center;
   color: white;
   text-shadow: 2px 2px 10px grey;
