@@ -44,8 +44,6 @@ const makeBoxes = (character) =>{
 }
 // FILMS:<br>${character.series[0].name}
 
-
-
 $(()=>{
   getInfo();
 })

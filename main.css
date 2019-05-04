@@ -39,14 +39,29 @@ h1{
 
                               /* CHARACTER LIST */
 /* Character list header */
-h2, hr {
+h1, hr {
   text-align: center;
   color: white;
   text-shadow: 2px 2px 10px grey;
   font-family: Marvel;
   text-transform: uppercase;
-  font-size: 3em;
-  text-decoration: underline;
+  font-size: 10em;
+  margin-top: 0;
+  margin-bottom:0;
+  opacity: .95;
+}
+
+.divider{
+  background-image: url('./Images/stars.png');
+  transform: skewX(-30deg);
+  width: 90%;
+  height: 29px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 40px;
+  box-shadow: 0 8px 6px -6px #312f2d;
+  opacity: .85;
 }
 /* flexbox to contain hero img links */
 div.container{
@@ -63,6 +78,7 @@ div.container{
   justify-content:space-between;
   border-radius: 10px;
 }
+
 .boxes{
   width: 100px;
   height: 230px;
@@ -74,6 +90,7 @@ div.container{
   display: block;
   overflow: auto;
   scroll-behavior: none;
+  opacity: .83;
 }
 .boxes:hover{
   min-width: 50vh;
@@ -83,6 +100,7 @@ div.container{
   scroll-behavior: auto;
   position:static;
   box-shadow: 0 20px 15px -11px #312f2d;
+  opacity: 1;
 }
 .boxes:hover .info{
   color: white;
@@ -118,21 +136,27 @@ div.container{
 
                                 /* SEARCH BAR */
 .topNav{
-box-shadow: 0 8px 6px -6px #312f2d;
 background-image:url(./Images/MarvelBackground.png);
+opacity: .8;
+}
+.topNav:hover{
+  opacity: 1;
+  transform: scale(1.02);
+  box-shadow: 0 8px 6px -6px #312f2d;
+
 }
 
 /* Search box value */
-input[type=text] {
+/* input[type=text] {
   width: 100px;
   transition: width 0.4s ease-in-out;
-}
+} */
 
 /* When the input field gets focus, change its width to 40% */
-input[type=text]:focus {
+/* input[type=text]:focus {
   width: 40%;
 
-}
+} */
 
 /* Home button */
 .topNav a.home{
@@ -142,7 +166,11 @@ input[type=text]:focus {
   margin-right: 20% ;
   margin-left: 25px;
   color: white;
+}
+a.home:hover{
+  color:red;
   text-shadow: 2px 2px 10px grey;
+
 }
 
 .MarvelLogo{
@@ -151,7 +179,8 @@ input[type=text]:focus {
   float: right;
   padding-top: 0;
   background-color: #f0131e;
-  box-shadow: 0 8px 6px -6px #312f2d;
+  /* box-shadow: 0 8px 6px -6px #312f2d; */
+  border-left: 1px solid rgb(0,0,0,.5);
 
 }
 #Logo{
