@@ -34,7 +34,7 @@ body{
   background:   url('./Images/plain-color-red-wallpaper-2.jpg') center;
 }
 h1{
-  font-family: Marvel;
+  font-family: 'Marvel', fallback, Arial;
 }
 
                               /* CHARACTER LIST */
