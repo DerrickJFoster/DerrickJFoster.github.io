@@ -88,7 +88,7 @@ div.container{
   /* box-shadow: 0 8px 6px -6px #312f2d; */
   color: transparent;
   display: block;
-  overflow: auto;
+  overflow: hidden;
   scroll-behavior: none;
   opacity: .83;
 }
