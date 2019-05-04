@@ -6,6 +6,7 @@
   width: device-width;
   zoom: 1.0;
 }
+
 html{
   background-color: #f0131e;
   background-image: linear-gradient(to bottom, red , yellow);
@@ -51,6 +52,7 @@ div.container{
   color: transparent;
   display: block;
   overflow: auto;
+  scroll-behavior: none;
 }
 .boxes:hover{
   width: 310px;
@@ -65,7 +67,7 @@ div.container{
 }
 .info{
   margin-right: 10px;
-  margin-left: 3px;
+  margin-left: 3px; 
 }
 #characterPic{
   /* border-radius: 10px 10px 0px 0px; */
@@ -138,4 +140,7 @@ input[type=text]:focus {
   color: rgba(0,0,0,.7);
   text-shadow: 0 1px rgba(255, 255, 255, 0.1);
   text-align: center;
+}
+@media only screen and (min-width: 768px){
+
 }
