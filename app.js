@@ -10,8 +10,11 @@ let queryType = `limit=100`
 const apiURL = baseURL + ts + '&' + publicKey+ '&' + queryType + '&' + hash
 
 //hash must = md5 of ts= + private + public
+
+
 console.log(apiURL);
 
+//pulling info from API and creating character cards
 const getInfo = () =>{
   $.ajax({
     url: apiURL
@@ -23,7 +26,7 @@ const getInfo = () =>{
 })
 }
 
-
+//populating character cards with information from API
 const $container = $('#container')
 
 const makeBoxes = (character) =>{
@@ -42,11 +45,13 @@ const makeBoxes = (character) =>{
 
    `).appendTo('div.container')
 }
-// FILMS:<br>${character.series[0].name}
+
+//button 1 functionality
 const helpMe = ()=>{
   alert('"Good day sir! It seems that you need some navigation guidance and I am here to help, Mr. Stark directed me to inform you that this site is very simple, all you must do is hover your mouse over any character that you desire to read more about and said information will pop up right on your screen! Give it a go why don\'t you."―J.A.R.V.I.S.')
 }
 
+//button 2 functionality
 const fullScreen = ()=> {
   console.log('clicked');
   let hidden1 = document.getElementById("characterList");
