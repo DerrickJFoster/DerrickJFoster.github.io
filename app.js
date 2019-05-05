@@ -28,6 +28,7 @@ const $container = $('#container')
 
 const makeBoxes = (character) =>{
     // console.log(character.series);
+
    $('<div>').addClass('boxes').html(`
    <img id='characterPic' src="${character.thumbnail.path}/portrait_medium.${character.thumbnail.extension}" alt="">
 
@@ -42,7 +43,31 @@ const makeBoxes = (character) =>{
    `).appendTo('div.container')
 }
 // FILMS:<br>${character.series[0].name}
+const helpMe = ()=>{
+  alert('"Good day sir! It seems that you need some navigation guidance and I am here to help, Mr. Stark directed me to inform you that this site is very simple, all you must do is hover your mouse over any character that you desire to read more about and said information will pop up right on your screen! Give it a go why don\'t you."―J.A.R.V.I.S.')
+}
+
+const fullScreen = ()=> {
+  console.log('clicked');
+  let hidden1 = document.getElementById("characterList");
+  let hidden2 = document.getElementById("divider")
+  let hidden3 = document.getElementById("topNav")
+  let hidden4 = document.getElementById("button2")
+  if (hidden1.style.display === "none") {
+    hidden1.style.display = "block";
+    hidden2.style.display = "block";
+    hidden3.style.display = "block";
+    hidden4.style.margin = "0";
+  } else {
+    hidden1.style.display = "none";
+    hidden2.style.display = "none";
+    hidden3.style.display = "none";
+    hidden4.style.margin = "auto";
+  }
+}
 
 $(()=>{
   getInfo();
+  $('#button1').click(helpMe)
+  $('#button2').click(fullScreen)
 })
