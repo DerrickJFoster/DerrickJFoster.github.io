@@ -168,8 +168,8 @@ a.home:hover{
 #button2{
   background-color: lightgrey;
   display: block;
-  height: 70px;
-  width: 70px;
+  height: 10vh;
+  width: 5.5vw;
   text-align:center;
   font-family: arial;
   border-radius: 50%;
